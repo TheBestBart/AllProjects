@@ -1,0 +1,111 @@
+body {
+  background-color: #322931!important;
+  height: 100%;
+  width: 100%;
+}
+#header {
+  background-color: #322931;
+  color: white;
+  padding-bottom: 2px;
+  border-right: 1px solid white;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  width: 100%;
+}
+#main-input {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+#main-input:focus {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  border: 1px solid green;
+}
+#header-h1 {
+  width: 100%;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 30px;
+}
+.link:hover {
+  font-weight: bold;
+}
+.link:focus {
+  font-weight: bold;
+}
+.button {
+  width: 100%;
+  transition: width 1s;
+  margin-top: 15px;
+}
+.button:hover {
+  width: 95%;
+}
+.button:focus {
+  width: 95%;
+}
+.generating-field {
+  margin-top: 15px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  font-size: 18px;
+}
+.form-radio-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.div-inside {
+  flex: 1;
+}
+.form-list {
+  flex: 1;
+  justify-content: flex-start;
+}
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.p-input-form {
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.input-form {
+  flex: 1;
+}
+.checkbox-label {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+.checkbox-div {
+  flex: 1;
+}
+#download-div {
+  display: flex;
+  flex-direction: row;
+}
+.successClass {
+  background-color: green!important;
+}
+.errorClass {
+  background-color: red!important;
+}
+
+
+/*# sourceMappingURL=/styles.dd855970.css.map */

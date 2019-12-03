@@ -1,0 +1,60 @@
+<div class="page-header all-users-title">
+    {{>only-panel-admin}}
+    {{#if product}}
+        <table class="table table-responsive">
+            <thead class="thead-dark">
+            <tr>
+              <th class="center closest" scope="col">nazwa</th>
+              <th class="center" scope="col">firma</th>
+              <th class="center" scope="col">cena</th>
+              <th class="center" scope="col">ilosc</th>
+              <th class="center" scope="col">zdjęcie</th>
+              <th class="center" scope="col">aktualizuj</th>
+              <th class="center" scope="col">usuń</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each product}}
+            <tr class="tr">
+                <td class="td"><p class="produkt-wszystkie-name">{{name}}</p></td>
+                <td class="td"><p class="produkt-wszystkie-name">{{firma}}</p></td>
+                <td class="td"><p class="produkt-wszystkie-name">{{cena}}.00 zł</td>
+                <td class="td"><p class="produkt-wszystkie-name">{{ilosc}}</td>
+                <td class="td text-center"><div class="td-img"><img class="img-responsive img-thumbnail " id="img" src={{zdjecie}} height="160" width="160"></div></td>
+                <td  id="td" class="td text-center dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="plus glyphicon glyphicon-wrench klucz" title="aktualizuj"></span></a>
+                  
+                  <div class="dropdown-menu" role="menu" action="admin-add-product" method="post"  >
+                        <ul class="Margin">
+                          <li>
+                          <b>nazwa</b>
+                            <input type="text" class="Nazwa" placeholder="nazwa produktu">
+                          </li>
+                          <li>
+                            <b>firma</b>
+                            <input type="text" class ="Firma" placeholder="Firma">
+                          </li>
+                          <li>
+                            <b>cena</b>
+                            <input type="text" class="cena" placeholder="cena" name="cena">
+                          </li>
+                          <li>
+                            <b>ilosc</b>
+                            <input type="text" class ="Ilosc" placeholder="ilosc">
+                          
+                          <li>
+                            <button class="btn AktualizujProdukt">Aktualizuj</button>
+                          </li>
+
+                         </ul>
+                      </div>
+
+                </td>
+                <td  id="td" class="td text-center"><div><a><span class="plus glyphicon glyphicon-minus minus" title="usuń"></span></a></div></td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+        {{/if}}
+
+</div>
+

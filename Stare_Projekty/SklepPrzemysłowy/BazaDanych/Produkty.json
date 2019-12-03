@@ -1,0 +1,364 @@
+{
+	"name" : "Grabie małe",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Gardena",
+	"cena" : 42.00,
+	"Ilosc" : 50,
+	"zdjecie" : "grabki-male-gardena.jpg"
+}
+{
+	"name" : "Mała motyczka serce 2 zęby",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Gardena",
+	"cena" : 42.00,
+	"Ilosc": 30,
+	"zdjecie" : "mala-motyczka-serce-2-zeby-gardena.jpg"
+	
+}
+{
+	"name" : "Skrobak do fug",
+	"kategoria" : "dom",
+	"firma" : "Gardena",
+	"cena" : 50.00,
+	"Ilosc" : 40,
+	"zdjecie" : "skrobak-do-fug-gardena.jpg"
+}
+{
+	"name" : "Grabki aluminiowe małe",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Belotta",
+	"cena" : 39.00,
+	"Ilosc" : 20,
+	"zdjecie" : "grabki-aluminiowe-male-belotta.jpg"
+}
+{
+	"name" : "Graca 16 NCV",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Romanik",
+	"cena" : 29.00 ,
+	"Ilosc" : 30,
+	"zdjecie" : "graca-16-ncv-romanik.jpg"
+}
+{
+	"name" : "Graca dwupałąkowa 14 NCV",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Romanik",
+	"cena" : 30.00 ,
+	"Ilosc" : 30,
+	"zdjecie" : "graca-dwupalakowa-14-ncv-romanik.jpg"
+}
+{
+	"name" : "Graca NCV",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Romanik",
+	"cena" : 25.00,
+	"Ilosc" : 50,
+	"zdjecie" : "graca-ncv-romanik.jpg"
+}
+{
+	"name" : "Kultywator",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Fiskars",
+	"cena" : 17.00,
+	"Ilosc" : 15,
+	"zdjecie" : "kultywator-fiskars.jpg"
+}
+{
+	"name" : "Kultywator Wolf",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "BO-M",
+	"cena" : 65.00 ,
+	"Ilosc" : 20,
+	"zdjecie" : "kultywator-wolf-bo-m.jpg"
+}
+{
+	"name" : "Mała motyczka prostokąt",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Gardena",
+	"cena" : 45.00 ,
+	"Ilosc" : 20,
+	"zdjecie" : "mala-motyczka-prostokat-gardena.jpg"
+}
+{
+	"name" : "Małe pazurki",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Gardena",
+	"cena" : 39.00,
+	"Ilosc" : 20,
+	"zdjecie" : "male-pazurki-gardena.jpg"
+}
+{
+	"name" : "Motyczka",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Fiskars",
+	"cena" : 25.00,
+	"Ilosc" : 20,
+	"zdjecie" : "motyczka-fiskars.jpg"
+}
+{
+	"name" : "Motyczka 16cm",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Gardena",
+	"cena" : 50.00,
+	"Ilosc" : 30,
+	"zdjecie" : "motyczka-16-cm-gardena.jpg"
+}
+{
+	"name" : "Motyczka 18cm",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Gardena",
+	"cena" : 51.00,
+	"Ilosc" : 20,
+	"zdjecie" : "motyczka-18-cm-gardena.jpg" 
+}
+{
+	"name" : "Wycinak do chwastów",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Gardena",
+	"cena" : 35.00 ,
+	"Ilosc" : 20,
+	"zdjecie" : "wycinak-do-chwastow-gardena.jpg"
+}
+{
+	"name" : "Łopatka do korzeni",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Romanik",
+	"cena" : 14.00 ,
+	"Ilosc" : 20,
+	"zdjecie" : "lopatka-do-korzeni-romanik.jpg"
+}
+{
+	"name" : "Łopatka do kwiatków",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Gardena",
+	"cena" : 16.00,
+	"Ilosc" : 20,
+	"zdjecie" : "lopatka-do-kwiatkow-6-cm-gardena.jpg"
+}
+{
+	"name" : "Łopatka do przesadzania roślin",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "UPO181",
+	"cena" : 14.00,
+	"Ilosc" : 20,
+	"zdjecie" : "lopatka-do-przesadzania-roslin-upo181.jpg"
+}
+{
+	"name" : "Łopatka szeroka",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Fiskars",
+	"cena" : 16.00 ,
+	"Ilosc" : 20,
+	"zdjecie" : "lopatka-szeroka-fiskars.jpg"
+}
+{
+	"name" : "Łopatka waska",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Belotta",
+	"cena" : 20.00,
+	"Ilosc" : 20,
+	"zdjecie" : "lopatka-waska-belotta.jpg"
+}
+{
+	"name" : "Łopatka wąska",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Fiskars",
+	"cena" : 15.00 ,
+	"Ilosc" : 20,
+	"zdjecie" : "lopatka-waska-fiskars.jpg"
+}
+{
+	"name" : "Obcinak do trawy ze stopą",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Romanik",
+	"cena" : 30.00 ,
+	"Ilosc" : 20,
+	"zdjecie":"obcinak-do-trawy-ze-stopa-romanik.jpg"
+}
+{
+	"name" : "Sapreka Nato",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Romanik",
+	"cena" : 54.00 ,
+	"Ilosc" : 20,
+	"zdjecie" : "saperka-nato-romanik.jpg"
+}
+{
+	"name" : "Szpadel ergo ostry",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Fiskars",
+	"cena" : 100.00 ,
+	"Ilosc" : 10,
+	"zdjecie" : "szpadel-ergo-ostry.jpg"
+}
+{
+	"name" : "Szpadel ergo prosty",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Fiskars",
+	"cena" : 100.00,
+	"Ilosc" : 10,
+	"zdjecie" : "szpadel-ergo-prosty.jpg"
+}
+{
+	"name" : "Szpadel ostry Solid",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Fiskars",
+	"cena" : 60.00,
+	"Ilosc" : 10,
+	"zdjecie" : "szpadel-ostry-solid-fiskars.jpg" 
+}
+{
+	"name" : "Szpadel półokrągły",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Gardena",
+	"cena" : 75.00,
+	"Ilosc" : 10,
+	"zdjecie" : "szpadel-polokragly-gardena.jpg" 
+}
+{
+	"name" : "Szpadel prosty Solid",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Fiskars",
+	"cena" : 60.00,
+	"Ilosc" : 15,
+	"zdjecie" : "szpadel-prosty-solid-fiskars.jpg" 
+}
+{
+	"name" : "Widły do kopania ergo",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Fiskars",
+	"cena" : 95.00 ,
+	"Ilosc" : 15,
+	"zdjecie" : "widly-do-kopania-ergo-fiskars.jpg" 
+}
+{
+	"name" : "Widły do kopania ergo",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Fiskars",
+	"cena" : 95.00,
+	"Ilosc" : 15,
+	"zdjecie" : "widly-do-kopania-duze-fiskars.jpg" 
+}
+{
+	"name" : "Siekiera ciesielska",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Greenmil",
+	"cena" : 100.00,
+	"Ilosc" : 20,
+	"zdjecie" : "siekiera-ciesielska.jpg" 
+}
+{
+	"name" : "Siekiera gospodarcza 1,2 kg",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Romanik",
+	"cena" : 65.00 ,
+	"Ilosc" : 10 ,
+	"zdjecie" : "siekiera-gospodarcza-12-kg-romanik.jpg" 
+}
+{
+	"name" : "Siekiera gospodarcza 1,5 kg",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Romanik",
+	"cena" :70.00 ,
+	"Ilosc" : 20 ,
+	"zdjecie" : "siekiera-gospodarcza-15-kg-romanik.jpg" 
+}
+{
+	"name" : "Siekiera kanadyjska 1,6 kg",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Romanik",
+	"cena" :63.00,
+	"Ilosc" : 30,
+	"zdjecie" : "siekiera-kanadyjska-16-kg-romanik.jpg" 
+}
+{
+	"name" : "Siekiera rozłupująca 1550g",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Greenmil",
+	"cena" : 110.00 ,
+	"Ilosc" : 20,
+	"zdjecie" : "siekiera-rozlupujaca-1550g-greenmil.jpg" 
+}
+{
+	"name" : "Siekiera rozłupująca z klinem 1,2 kg",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Romanik",
+	"cena" : 76.00,
+	"Ilosc" : 20 ,
+	"zdjecie" : "siekiera-rozlupujaca-z-klinem-12-kg-romanik.jpg" 
+}
+{
+	"name" : "Siekiera rozłupująca z klinem 2 kg",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Romanik",
+	"cena" : 128.00 ,
+	"Ilosc" : 30 ,
+	"zdjecie" : "siekiera-rozlupujaca-z-klinem-2-kg-romanik.jpg" 
+}
+{
+	"name" : "Siekiera X10 uniwersalna ciesielska",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Fiskars",
+	"cena" : 180.00 ,
+	"Ilosc" : 30,
+	"zdjecie" : "siekiera-x10.jpg" 
+}
+{
+	"name" : "Siekiera X11 rozłupująca",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Fiskars",
+	"cena" : 182.00,
+	"Ilosc" : 20 ,
+	"zdjecie" : "siekiera-x11-rozlupujaca.jpg" 
+}
+{
+	"name" : "Siekiera X15 uniwersalna",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Fiskars",
+	"cena" : 213.00 ,
+	"Ilosc" : 10 ,
+	"zdjecie" : "siekiera-x15-uniwersalna.jpg" 
+}
+{
+	"name" : "Siekiera X17 rozłupująca",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Fiskars",
+	"cena" : 208.00,
+	"Ilosc" : 30,
+	"zdjecie" : "siekiera-x17-rozlupujaca-fiskars.jpg" 
+}
+{
+	"name" : "Siekiera X25 rozłupująca",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Fiskars",
+	"cena" : 280.00,
+	"Ilosc" : 10 ,
+	"zdjecie" : "siekiera-x25-rozlupujaca.jpg" 
+}
+{
+	"name" : "Siekiera X27 rozłupujaca",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Fiskars",
+	"cena" : 300.00,
+	"Ilosc" : 5 ,
+	"zdjecie" : "siekiera-x27-rozlupujaca.jpg" 
+}
+{
+	"name" : "Toporek 0,6 kg",
+	"kategoria" : "ogrodnictwo",
+	"firma" : "Romanik",
+	"cena" : 27.00 ,
+	"Ilosc" : 30,
+	"zdjecie" : "toporek-06-kg-romanik.jpg" 
+}
+
+//-----------------------------------------------------------------------------
+
+{
+	"name" : "Gwoździe tapicerskie 6,5mm mosiadzowane 40szt",
+	"kategoria" : "",
+	"firma" : "",
+	"cena" :  ,
+	"ilosc" : ,
+	"zdjecie" : "Gwozdzie_tapicerskie_6_5_mm_mosiadzowane_40_szt.jpg" 
+}

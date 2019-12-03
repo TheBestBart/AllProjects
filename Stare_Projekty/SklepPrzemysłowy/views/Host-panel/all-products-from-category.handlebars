@@ -1,0 +1,27 @@
+	<div class="page-header">
+    {{#if product}}
+        <table class="table">
+         <thead class="thead-dark">
+            <tr>
+              <th class="center" scope="col">nazwa</th>
+              <th class="center" scope="col">firma</th>
+              <th class="center" scope="col">cena</th>
+              <th class="center" scope="col">zdjecie</th>
+              <th class="center" scope="col">kup</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each product}}
+            <tr>
+                <td><p class="produkt-wszystkie-name">{{name}}</p></td>
+                <td><p class="produkt-wszystkie-name">firma: {{firma}}</p></td>
+                <td><p class="produkt-wszystkie-name">cena: {{cena}}.00 zł</td>
+                <td><img class="img-responsive img-thumbnail" id="img" src={{zdjecie}} height="160" width="160"></td>
+                <td class="tr-negatyw"><i class="demo-icon icon-ok plus"></i></td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+        {{/if}}
+
+</div>

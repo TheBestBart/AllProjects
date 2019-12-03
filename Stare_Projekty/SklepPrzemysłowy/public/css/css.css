@@ -1,0 +1,214 @@
+body{
+background-color:#f8f4f4;
+}
+
+.odstep{
+	margin:7px;
+}
+
+.BiggerFonts{
+	font-size:20px;
+}
+
+.submit{
+	
+}
+.submit:hover{
+	
+}
+.Zarejestruj{
+	color:green!important;
+}
+.Zarejestruj:hover{
+	transform: scale(1.02);
+}
+.Search{
+	width:200px;
+}
+.Margin{
+	margin-right:30px;
+}
+.Margin2{
+	margin-top:10px;
+	margin-bottom: 0 ;
+}
+
+nav{
+	margin-bottom:30px;
+}
+
+ul {
+
+list-style-type: none;
+
+}
+
+#NAGLOWEK{
+	text-align: center;
+	font-size:30px;
+	padding:10px;
+	background-color:gray;
+}
+#NAGLOWEk-ADMIN{
+	text-align: center;
+	font-size:30px;
+	padding:10px;
+	background-color:#6ea771;
+}
+.Duze
+{
+ font-size: 30px;
+ color:#000010;
+}
+.Auto{
+	margin-left:30px;
+	
+}
+
+.produkt-wszystkie-name{
+
+	text-align:center;
+	font-size:17px !important;
+	line-height: 160px;
+
+}
+
+.ogr-div{
+	margin-left:200px;
+	margin-right:200px;
+}
+
+.home-title{
+	text-align:center;
+	font-size:30px;
+	margin-top:100px;
+	margin-bottom:40px;
+}
+.home-content{
+	text-align:center;
+	font-size:25px;
+}
+.all-users{
+	text-align:center;
+}
+.all-users-title{
+	margin-top:100px;
+	margin-bottom:50px;
+}
+.all-users-tr{
+	width:100px;
+}
+
+.iframe-div{
+	padding: :5px;
+	border: 2px black solid;
+	margin-left:268px;
+	margin-right:268px;
+}
+
+.iframe{
+	margin:auto;
+}
+.container{
+	margin-top:80px;
+}
+#img{
+
+display: block;
+margin: 0 auto;
+}
+#img:hover{
+	transform: scale(1.7);
+	border: 1px solid green;
+}
+.plus{
+	font-size:40px;
+	line-height: 160px;
+
+}
+.minus{
+	color:red
+}
+
+.minus:hover{
+	color:#990033;
+}
+.klucz{
+	color:green;
+}
+.klucz:hover
+{
+color:#009933;
+}
+
+
+.email{
+
+text-align: right;
+background:lightblue!important;
+border-top: 1px solid black;
+color:black !important;
+padding-top: 1px;
+padding-bottom:1px;
+margin-bottom:30px;
+
+}
+
+.admin-panel{
+	margin-top:0px;
+}
+.iframe-panel{
+	margin-top:160px;
+}
+.hide{
+	 visibility: hidden;
+}
+.nav2{
+	background-color:#333399!important;
+}
+.table{
+	background-color:white;
+}
+#AdminPanel{
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+.li:hover{
+	background-color:blue;
+}
+
+.a:hover{
+	color:white!important;
+}
+
+.thead-dark{
+	background-color:black;
+	color:white;
+}
+.td{
+	border:1px solid black;
+}
+.tr{
+height: 120px!important;
+}
+.td-img{
+	margin: 0 auto;
+}
+.center{
+	text-align: center;
+}
+.margin{
+	margin-top:100px;
+	border-top:2px solid black;
+}
+#userNavbar{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.marginTop{
+	margin-top:100px;
+}
+.koszyk{}
+.koszyk:hover{
+	color:gray;
+}

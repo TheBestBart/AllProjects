@@ -1,0 +1,45 @@
+<div class="page-header all-users-title">
+    {{>only-user-panel}}
+    {{#if order}}
+        <table class="table center table-responsive">
+            <thead class="thead-dark">
+            <tr>
+              <th class="center" scope="col">ID zamówienia</th>
+              <th class="center" scope="col">Data</th>
+              <th class="center" scope="col">Zamówienie</th>
+              <th class="center" scope="col">Suma</th>
+              <th class="center" scope="col">Zapłacony</th>
+              <th class="center" scope="col">Zrealizowany</th>
+              <th class="center" scope="col">Usuń</th>
+              <th class="center" scope="col">Zapłać</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each order}}
+            <tr>
+                <td class="text-center closest" name="id">{{_id}}</td>
+                <td class="text-center">{{data}}</td>
+                {{#if zamowienie}}
+                <td>
+                  {{#each zamowienie}}
+                  <ul>
+                    <li>{{ilosc}} x {{nazwa}} <b>({{firma}})</b> : {{cena}}.00zł</li>
+                  </ul>
+                  {{/each}}
+                </td>
+                {{/if}}
+                <td>{{suma}}.00 zł</td>
+                <td>{{zaplacone}}</td>
+                <td>{{realizacja}}</td>
+                <td><button class="btn btn-danger usunZamowienie">Usuń</button></td>
+                <td><button class="btn btn-primary ZaplacZamowienie">Zapłać</button></td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+        {{else}}
+        <h2 class="home-title">Brak wyników</h2>
+        <p class="home-content">Nie zrobiłeś jeszcze zakupów w naszym sklepie</p>
+        {{/if}}
+
+</div>

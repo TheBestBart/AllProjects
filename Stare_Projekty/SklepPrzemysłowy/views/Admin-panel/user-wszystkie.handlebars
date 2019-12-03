@@ -1,0 +1,35 @@
+
+<div class="page-header all-users-title">
+  {{>only-panel-admin}}  
+
+        {{#if user}}
+        <table class="table">
+            <thead class="thead-dark">
+            <tr>
+              <th scope="col">Imie</th>
+              <th scope="col">Nazwisko</th>
+              <th scope="col">E-mail</th>
+              <th scope="col">Admin</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each user}}
+            <tr>
+                <td>{{imie}}</td>
+                <td>{{nazwisko}}</td>
+                <td>{{email}}</td>
+                <td><b>{{admin}}</b></td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+        {{else}}
+        <h2 class="home-title">Brak wyników</h2>
+        <p class="home-content">Jeszcze nie ma żadnych użytkowników w sklepie</p>
+        {{/if}}
+
+
+</div>
+
+
+

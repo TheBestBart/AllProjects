@@ -1,0 +1,28 @@
+<div class="page-header all-users-title">
+    {{#if product}}
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th class="center" scope="col">nazwa</th>
+              <th class="center" scope="col">firma</th>
+              <th class="center" scope="col">cena</th>
+              <th class="center" scope="col">zdjecie</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each product}}
+            <tr>
+                <td><p class="produkt-wszystkie-name">{{name}}</p></td>
+                <td><p class="produkt-wszystkie-name">firma: {{firma}}</p></td>
+                <td><p class="produkt-wszystkie-name">cena: {{cena}}.00 zł</td>
+                <td><img id="img" src={{zdjecie}} height="160" width="160"></td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+        {{else}}
+        <h2 class="home-title">Brak wyników</h2>
+        <p class="home-content">Podanego produktu nie ma w bazie sklepu</p>
+        {{/if}}
+
+</div>

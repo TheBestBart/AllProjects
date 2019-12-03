@@ -1,0 +1,68 @@
+
+		<div id="top">
+			<nav id="nav" class="navbar navbar-default navbar-fixed-top nav2" role="navigation">
+				<header id="NAGLOWEk-ADMIN" class="container-fluid">Panel Administratora {{email}}</header>
+				<div class="container-fluid">
+						<div class=" navbar-header">
+										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#AdminPanel">
+												<span class="about icon-bar" style="background:black"></span>
+												<span class="about icon-bar" style="background:black"></span>
+												<span class="about icon-bar" style="background:black"></span>
+										</button>
+								<a class="header-logo" href="/">
+									<i class="demo-icon icon-warehouse Duze" title="Strona Główna"></i>
+								</a>
+						  </div>
+	 
+										 
+						   <div class="collapse navbar-collapse" id="AdminPanel">
+										  
+										<ul class="nav navbar-nav navbar-right">
+											
+										<li class="li"><a class="about a" href="/admin-all">Lista Kont</a></li>
+										<li class="li"><a class="user-panel a test" href="/admin-historia-zamowien">Historia Zamówień</a></li>
+										<li class="li"><a class ="about a" href="admin-lista-produktow">Lista Produktów</a></li>
+										<li class="li"><a class="about a dropdown-toggle" data-toggle="dropdown">Dodaj produkt</a>
+											 <!-- action="/admin-add-product" method="post"  -->
+											<form class="dropdown-menu" action="/admin-add-product" method="post" role="menu"  >
+												<ul class="Margin">
+													<li>
+														<b>nazwa</b>
+														<input type="text" class="Name" placeholder="nazwa produktu" name="name">
+													</li>
+													
+													<li>
+														<b>kategoria</b>
+														<input type="text" class="Kategoria" placeholder="kategoria" name="kategoria">
+													</li>
+													<li>
+														<b>firma</b>
+														<input type="text" class="Firma" placeholder="firma" name="firma">
+													</li>
+													<li>
+														<b>cena</b>
+														<input type="text" class="Cena" placeholder="cena" name="cena">
+													</li>
+													<li>
+														<b>ilosc</b>
+														<input type="text" class="Ilosc" placeholder="ilosc" name="ilosc">
+													</li>
+													<li>
+														<b>zdjecie</b>
+														<input type="text" class="Zdjecie" placeholder="zdjecie" name="zdjecie">
+													</li>
+													<li>
+														 <input type="submit" value="Zaktualizuj" class="Margin2 Auto">
+													</li>
+
+												 </ul>
+											</form>
+										</li >
+										<li class="li"><a class="user-panel a" href="/wylogowano">Wyloguj</a></li>	
+												
+										</ul>
+									</div>									   											 
+				</div>
+			</nav>  
+		</div>
+	

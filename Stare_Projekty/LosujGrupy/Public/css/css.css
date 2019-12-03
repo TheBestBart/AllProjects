@@ -1,0 +1,177 @@
+
+
+body{
+	background-color: #DCDCDC;
+}
+#NAGLOWEK{
+	text-align: center;
+	font-size:30px;
+	padding:10px;
+	background-color:#010a23;
+
+}
+#NAGLOWEK:hover{
+	
+
+}
+
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+    > li {
+      float: none;
+      display: inline-block;
+    }
+  }
+
+  .Panel{
+  	color:white!important;
+  	text-align: center!important;
+  }
+
+  .navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+}
+#TenDiv{
+	width: 100%!important;
+	background-color: #DCDCDC;
+	width: 100%!important;
+}
+.Obraz{
+	text-align:center;
+	padding-top:100px;
+	width:350px;
+	
+}
+.Obraz:hover{
+	transform: Scale(1.3);
+}
+.Formularz{
+	padding-top:80px;
+	background-color:#808080;
+	width:700px;
+	padding-bottom:20px;
+	border: 1px solid white;
+	border-radius: 5px
+}
+.Select{
+	margin-left:16px;
+	padding-top:5px;
+	padding-bottom:5px;
+	width: 150px;
+
+}
+.Width{
+	width: 100%!important;
+}
+.Comunity{
+	color:white;
+}
+.Comunity:hover{
+	color:white;
+	text-decoration: none;
+}
+.Sprawdzenie{
+	 visibility: hidden;
+}
+.odleglosc{
+	margin-top: 200px;
+}
+.czarny{
+	background: black;
+	color: white;
+	text-align: center!important;
+}
+.Color{
+
+	color:white;
+	text-decoration-line: none;
+	transform: translate(50px, 100px);
+
+}
+.Color:hover{
+	text-decoration-line: none;
+	color:#e0e0fc;
+	transform: translate(50px, 100px);
+;
+
+}
+.Color2{
+
+	color:black;
+	text-decoration-line: none;
+	text-align: center;
+
+}
+.Margin-Top{
+	margin-top:50px;
+}
+
+.Red{
+	color:red;
+	font-weight:700;
+}
+.Green{
+	color:green;
+	font-weight:700;
+}
+.Left{
+	text-align: right;
+}
+.BigSize{
+	font-size:100px;
+	text-align:center;
+	padding-top:100px;
+	width:350px;
+}
+.Change:hover{
+	color: #ffff99;
+	font-size:15px;
+}
+.Modal{
+	color:black;
+}
+.Random{
+	height:200px;
+	background: silver;
+	border-radius: 15px;
+	color:white;
+	font-weight:700;
+	font-size:60px;
+	transition-property: background;
+	transition-duration: 5s;
+
+}
+.Random:hover{
+
+transform: Scale(1.3);
+border: 5px solid white;
+background: deepskyblue;
+border-radius: 30px;
+color:white;
+text-decoration-line: none;
+
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+.Thead{
+	font-size:25px;
+}
+.First{
+	text-decoration-line: underline;
+}
+.czcionka{
+	font-family: verdana;
+}

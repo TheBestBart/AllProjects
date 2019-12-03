@@ -1,0 +1,47 @@
+<div class="page-header all-users-title DoZmiany">
+    {{>only-user-panel}}
+    {{#if bin}}
+        <table class="table center table-responsive">
+            <thead class="thead-dark">
+            <tr>
+              <th class="center" scope="col">ID produktu</th>
+              <th class="center" scope="col">Zamówienie</th>
+              <th class="center" scope="col">Cena</th>
+              <th class="center" scope="col">Usuń</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each bin}}
+            <tr>
+                <td class="produkt-wszystkie-name">{{_id}}</td>
+                {{#if koszyk}}
+                <td>
+                  {{#each koszyk}}
+                  <ul>
+                    <li><b>{{ilosc}}x</b> {{nazwa}}</li>
+                  </ul>
+                  {{/each}}
+                </td>
+                {{/if}}
+                <td class="cena">{{suma}}.00 zł</td>
+                <td><button class="btn btn-danger usunZkoszyka">Usuń</button></td>
+            </tr>
+            {{/each}}
+            <tr>
+              <td></td>
+              <td><b>suma:</b></td>
+              <td class="Suma"></td>
+              <td></td>
+            </tr>
+            
+          </tbody>
+        </table>
+        <td><button class="btn btn-success Zamow">Zamów</button></td>
+        <td><button class="btn btn-danger WyczyscKoszyk">Opróznij Koszyk</button></td>
+        {{else}}
+        <h2 class="home-title">Brak wyników</h2>
+        <p class="home-content">Twoj koszyk jest pusty</p>
+        {{/if}}
+        
+
+</div>

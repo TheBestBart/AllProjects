@@ -1,0 +1,6 @@
+
+.icon-basket:before { content: '\e800'; } /* '' */
+.icon-search:before { content: '\e801'; } /* '' */
+.icon-user:before { content: '\e802'; } /* '' */
+.icon-user-add:before { content: '\e803'; } /* '' */
+.icon-warehouse:before { content: '\e840'; } /* '' */

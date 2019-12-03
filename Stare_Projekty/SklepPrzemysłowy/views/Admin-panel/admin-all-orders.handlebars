@@ -1,0 +1,55 @@
+<div class="page-header all-users-title">
+  {{>only-panel-admin}}  
+
+        {{#if order}}
+        <table class="table center table-responsive">
+            <thead class="thead-dark">
+            <tr>
+              <th class="center" scope="col">ID zamówienia</th>
+              <th class="center" scope="col">Klient</th>
+              <th class="center" scope="col">Zamówienie</th>
+              <th class="center" scope="col">Suma</th>
+              <th class="center" scope="col">Dane Zamówienia</th>
+              <th class="center" scope="col">Usuń</th>
+              <th class="center" scope="col">Aktualizacja</th>
+              <th class="center" scope="col">Aktualizacja</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each order}}
+            <tr>
+                <td class="text-center closest">{{_id}}</td>
+                <td>{{IdKlient}}</td>
+                {{#if zamowienie}}
+                <td>
+                  {{#each zamowienie}}
+                  <ul>
+                    <li> <b>{{ilosc}}x</b> {{nazwa}} <b>({{firma}})</b>, <b>{{cena}}.00zł</b></li>
+                  </ul>
+                  {{/each}}
+                </td>
+                {{/if}}
+                <td>{{suma}}.00 zł</td>
+                <td>
+                  <ul>
+                    <li><b>Zaplacony</b><p>{{zaplacone}}</p></li>
+                    <li><b>Otrzymany</b><p>{{otrzymano}}</p></li>
+                    <li><b>Realizacja</b><p>{{realizacja}}</p></li>
+                  </ul>
+                </td>
+                <td><button class="btn btn-danger usunZamowienie">Usuń</button></td>
+                <td><button class="btn btn-success zaplac" href="/historia-Zamowienia-aktualizuj">Zapłacono</button></td>
+                <td><button class="btn btn-success aktualizacja" href="/historia-Zamowienia-aktualizuj">Zrealizowano</button></td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+        {{else}}
+        <h2 class="home-title">Brak wyników</h2>
+        <p class="home-content">Nie zlożono zamówień lub zostały one usunięte przez Administratora</p>
+        {{/if}}
+	
+</div>
+
+
+

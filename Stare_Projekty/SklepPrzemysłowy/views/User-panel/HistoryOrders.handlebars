@@ -1,0 +1,103 @@
+<div class="page-header all-users-title">
+    {{>only-user-panel}}
+    {{#if order}}
+        <table class="table center table-responsive">
+            <thead class="thead-dark">
+            <tr>
+              <th class="center" scope="col">ID zamówienia</th>
+              <th class="center" scope="col">Data</th>
+              <th class="center" scope="col">Zamówienie</th>
+              <th class="center" scope="col">Suma</th>
+              <th class="center" scope="col">Zapłacony</th>
+              <th class="center" scope="col">Zrealizowany</th>
+              <th class="center" scope="col">Usuń</th>
+              <th class="center" scope="col">Zapłać</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each order}}
+            <tr>
+                <td class="text-center closest" name="id">{{_id}}</td>
+                <td class="text-center">{{data}}</td>
+                {{#if zamowienie}}
+                <td>
+                  {{#each zamowienie}}
+                  <ul>
+                    <li>{{ilosc}} x {{nazwa}} <b>({{firma}})</b> : {{cena}}.00zł</li>
+                  </ul>
+                  {{/each}}
+                </td>
+                {{/if}}
+                <td>{{suma}}.00 zł</td>
+                <td>{{zaplacone}}</td>
+                <td>{{realizacja}}</td>
+                <td><button class="btn btn-danger  usunZamowienie">Usuń</button></td>
+                <td  id="td" class="text-center dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><button class="btn btn-primary ZaplacZamowienie">Zapłać</button></a>
+                  
+                  <div class="dropdown-menu" role="menu" action="admin-add-product" method="post"  >
+                        <ul class="Margin">
+                          <li>
+                          <b>Wybierz bank</b>
+                            <p>
+                              <select class="select">
+                                <option>Pekao S.A</option>
+                                <option>Millenium</option>
+                                <option>PKO BP</option>
+                                <option>WBK</option>
+                                <option>MBank</option>
+                                <option>Raiffeisen Bank</option>
+                                <option>ING Bank Śląski</option>
+                              </select>
+                          </p>
+                          </li>
+                          
+                          <li>
+                            <button class="btn Zamowiono">Zapłać</button>
+                          </li>
+
+                         </ul>
+                      </div>
+
+                </td>
+
+
+                <!-- <td><button class="btn btn-primary ZaplacZamowienie">Zapłać</button></td> -->
+                <!-- <td><a href=".zaplacono" data-toggle="collapse" class="ZaplacZamowienie btn btn-primary">Zapłać</a></td> -->
+                
+
+                   <!--  <div class="container-fluid panel-collapse collapse zaplacono" method="post"  >
+                        <ul class="Margin">
+                          <li>
+                          <b>nazwa</b>
+                            <input type="text" class="Nazwa" placeholder="nazwa produktu">
+                          </li>
+                          <li>
+                            <b>firma</b>
+                            <input type="text" class ="Firma" placeholder="Firma">
+                          </li>
+                          <li>
+                            <b>cena</b>
+                            <input type="text" class="cena" placeholder="cena" name="cena">
+                          </li>
+                          <li>
+                            <b>ilosc</b>
+                            <input type="text" class ="Ilosc" placeholder="ilosc">
+                          
+                          <li>
+                            <button class="btn zaplać">Aktualizuj</button>
+                          </li>
+
+                         </ul>
+                      </div>
+ -->
+      
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+        {{else}}
+        <h2 class="home-title">Brak wyników</h2>
+        <p class="home-content">Nie zrobiłeś jeszcze zakupów w naszym sklepie</p>
+        {{/if}}
+
+</div>

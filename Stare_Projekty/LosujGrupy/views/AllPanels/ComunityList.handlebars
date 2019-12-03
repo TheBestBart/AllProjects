@@ -1,0 +1,148 @@
+	<div class="container Margin-Top">
+    <h2><b>Xll Królewska</b> </h2>
+      <p><i class="czcionka">lista braci 12 wspólnoty na Królewskiej w Lublinie</i></p>   
+  <input class="form-control" id="myInput" type="text" placeholder="Szukaj osobe...">
+  <br>
+
+
+    {{#if neon}}
+        <table class="table table-dark table-hover">
+         <thead>
+            <tr>
+              <th>imie</th>
+              <th>nazwisko</th>
+              <th>email</th>
+              <th>telefon</th>
+              <th>adres</th>
+              <th>status</th>
+            </tr>
+          </thead>
+          <tbody id="myTable">
+            {{#each neon}}
+            <tr class="TR">
+                <td class="IMIE">{{imie}}</p></td>
+                <td class="NAZWISKO">{{nazwisko}}</p></td>
+                <td class="">{{email}}</td>
+                <td class="">{{telefon}}</td>
+                <td class="">{{adres}}</td>
+                <td class="Type">{{status}}</td>
+                <td class="btn btn-primary" data-toggle="modal" data-target="#{{imie}}{{nazwisko}}1">zmień status
+
+                   <!-- Button to Open the Modal -->
+
+                    <!-- The Modal -->
+                    <div class="modal fade" id="{{imie}}{{nazwisko}}1">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                        
+                          <!-- Modal Header -->
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>
+                          
+                          <!-- Modal body -->
+                          <div class="modal-body Modal">
+                              Czy na pewno zmienić status?
+                          </div>
+                          
+                          <!-- Modal footer -->
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary Change" data-dismiss="modal">Zmień</button>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+  
+
+                </td>
+                <td class="btn btn-danger" data-toggle="modal" data-target="#{{nazwisko}}2">usuń
+
+                   <!-- Button to Open the Modal -->
+
+                    <!-- The Modal -->
+                    <div class="modal fade" id="{{nazwisko}}2">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                        
+                          <!-- Modal Header -->
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>
+                          
+                          <!-- Modal body -->
+                          <div class="modal-body Modal">
+                              Czy na pewno chcesz usunąć osobe?
+                          </div>
+                          
+                          <!-- Modal footer -->
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary Delete" data-dismiss="modal">Usuń</button>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                   <td>
+
+                          <div class="DIV">
+                  
+                                  <input class="Man" type="radio" name="gender" value="male" checked> mężczyzna<br>
+                                  <input class="Woman" type="radio" name="gender" value="female"> kobieta<br>
+                                  <button type="button" class="btn btn-secondary GENDER" data-dismiss="modal">dodaj</button>
+                          </div>
+
+                  </td> 
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+        {{/if}}
+
+</div>
+
+<!-- <div class="container Margin-Top">
+  <h2>Xll Królewska </h2>
+  <p>lista braci 12 wspólnoty na Królewskiej w Lublinie</p>            
+  <table class="table table-dark table-hover">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+ -->
+
+
+<!-- 
+ <td>
+
+                          <div class="DIV">
+                  
+                                  <input class="Man" type="radio" name="gender" value="male" checked> mężczyzna<br>
+                                  <input class="Woman" type="radio" name="gender" value="female"> kobieta<br>
+                                  <button type="button" class="btn btn-secondary GENDER" data-dismiss="modal">dodaj</button>
+                          </div>
+
+  </td> -->

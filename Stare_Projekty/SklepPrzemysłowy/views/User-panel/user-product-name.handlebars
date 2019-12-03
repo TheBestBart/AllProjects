@@ -1,0 +1,89 @@
+
+
+{{>only-user-panel}}
+  <div class="marginTop page-header">
+    {{#if product}}
+        <table class="table">
+         <thead class="thead-dark">
+            <tr>
+              <th class="center" scope="col">nazwa</th>
+              <th class="center" scope="col">firma</th>
+              <th class="center" scope="col">cena</th>
+              <th class="center" scope="col">zdjecie</th>
+              <th class="center" scope="col">ilość</th>
+              <th class="center" scope="col">kup</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each product}}
+            <tr>
+                <td><p class="produkt-wszystkie-name Nazwa">{{name}}</p></td>
+                <td><p class="produkt-wszystkie-name Firma">{{firma}}</p></td>
+                <td><p class="produkt-wszystkie-name Cena">{{cena}}.00 zł</td>
+                <td><img class="img-responsive img-thumbnail" id="img" src={{zdjecie}} height="160" width="160"></td>
+                <td><p class="produkt-wszystkie-name">
+                  <select class="select">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                  </select></p>
+                </td>
+                <td class="tr-negatyw"><i class="demo-icon icon-ok plus koszyk"></i></td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+        {{else}}
+        <h2 class="home-title">Brak wyników</h2>
+        <p class="home-content">Podanego produktu nie ma w bazie sklepu</p>
+        {{/if}}
+
+</div>
+
+
+
+<!-- {{>only-user-panel}}
+<div class="page-header all-users-title">
+    {{#if product}}
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th class="center" scope="col">nazwa</th>
+              <th class="center" scope="col">firma</th>
+              <th class="center" scope="col">cena</th>
+              <th class="center" scope="col">zdjecie</th>
+              <th class="center" scope="col">kup</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each product}}
+            <tr>
+                <td><p class="produkt-wszystkie-name closest">{{name}}</p></td>
+                <td><p class="produkt-wszystkie-name">firma: {{firma}}</p></td>
+                <td><p class="produkt-wszystkie-name">cena: {{cena}}.00 zł</td>
+                <td><img id="img" src={{zdjecie}} height="160" width="160"></td>
+                <td class="tr-negatyw"><i class="demo-icon icon-ok plus koszyk"></i></td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+        {{/if}}
+
+</div> -->

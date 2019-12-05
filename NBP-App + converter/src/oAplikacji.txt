@@ -1,0 +1,8 @@
+Aplikacja jest napisana w taki sposób aby pokazywała aktualną
+wartość kursów walut, tych najbardziej znanych (Tabela A) jak i tych 
+mniej znanych z całego swiata (Tabela B)
+
+do tego celu, używa Api Narodowego Banku Polskiego i na podstawie
+daty ostatniej aktualizacji, pobiera równiez dane z przed tygodnia
+i je porównuje. Oprócz tego, możliwe jest wyszukanie waluty po nazwie
+oraz przeliczenie danej kwoty z waluty pierwszej na drugą wybraną z listy

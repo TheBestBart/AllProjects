@@ -12,6 +12,18 @@ export const postData = async (url = '', data = {}) =>  {
       referrer: 'no-referrer', 
       body: JSON.stringify(data),
     });
-    
+
     return await response.json();
   }
+
+
+  export const createObjectToNewAccount = (state) => {
+    let { newEmail, newPassword , newPlatform } =  state;
+
+    (newEmail && newPassword && newPlatform) 
+        ? {
+        newEmail: newEmail,
+        newPassword: newPassword,
+        newPlatform: newPlatform,
+        } : false
+    }

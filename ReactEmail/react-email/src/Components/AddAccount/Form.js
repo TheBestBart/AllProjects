@@ -3,10 +3,15 @@ import PropTypes from "prop-types";
 
 export class Form  extends React.Component {
 
-    static propTypes = {};
+    static propTypes = {
+        onChangeNewEmail: PropTypes.func.isRequired,
+        onChangeNewPass: PropTypes.func.isRequired,
+        onChangeNewPlatform: PropTypes.func.isRequired,
+        sendPost: PropTypes.func.isRequired,
+    };
 
     render() {
-        let {} =  this.props;
+        let { onChangeNewEmail, onChangeNewPass, onChangeNewPlatform, sendPost } =  this.props;
 
         return (
             <div className="container mt-2 pt-2 rounded" style={{border: "1px solid black", minheight: "400px", width:"400px"}}>
@@ -17,21 +22,21 @@ export class Form  extends React.Component {
 
                     <div className="mt-5">
                         <label>Podaj E-mail: </label>
-                        <input className="form-control" type="email" placeholder="@" style={{borderRadius: "20px", borderTop:"none"}}/>
+                        <input onChange={() => onChangeNewEmail(e.target.value)} className="form-control" type="email" placeholder="@" style={{borderRadius: "20px", borderTop:"none"}}/>
                     </div>
 
                     <div className="mt-3">
                         <label>Podaj Haslo: </label>
-                        <input className="form-control" type="password" placeholder="#" style={{borderRadius: "20px", borderTop:"none"}}/>
+                        <input onChange={() => onChangeNewPass(e.target.value)} className="form-control" type="password" placeholder="#" style={{borderRadius: "20px", borderTop:"none"}}/>
                     </div>
 
                     <div className="mt-3">
                     <   label>Podaj Platforme: </label>
-                        <input className="form-control" type="password" placeholder="@xxxx.com" style={{borderRadius: "20px", borderTop:"none"}}/>
+                        <input onChange={() => onChangeNewPlatform(e.target.value)} className="form-control" type="password" placeholder="@xxxx.com" style={{borderRadius: "20px", borderTop:"none"}}/>
                     </div>
 
                     <div className="my-5 text-center">
-                        <button className="btn " style={{borderRadius: "20px", borderTop:"none", border:"1px solid blue", }}>Dodaj Konto</button>
+                        <button onClick={sendPost} className="btn " style={{borderRadius: "20px", borderTop:"none", border:"1px solid blue", }}>Dodaj Konto</button>
                     </div>   
                 </div>
             </div>

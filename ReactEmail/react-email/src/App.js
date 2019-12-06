@@ -7,7 +7,8 @@ import { SendEmail } from './Components/SendEmail/SendEmail';
 import { Form } from './Components/AddAccount/Form';
 import { StartOptions } from './Components/LogIn/StartOptions';
 import { LogIn } from './Components/LogIn/LogIn';
-import { postData } from './Functions/functions'
+import { postData, createObjectToNewAccount } from './Functions/functions'
+import { ResponseComponent } from './Components/ResponseComponent';
 
 
 class App extends React.Component {
@@ -16,10 +17,10 @@ class App extends React.Component {
 		super(props);
 
 		this.state = {
-			newEmail: '',
-			newPassword: '',
-			newPlatform: '',
-			newAccountResponse: ""
+			newEmail: 0,
+			newPassword: 0,
+			newPlatform: 0,
+			newAccountResponse: 0
 		}
 
 		this.onChangeNewEmail = this.onChangeNewEmail.bind(this);
@@ -43,25 +44,23 @@ class App extends React.Component {
 		this.setState({newAccountResponse: nodeResponse});
 	} 
 
-	createObjectToNewAccount = () => {
-		let { newEmial, newPassword , newPlatform } =  this.state;
-
-		return {
-			newEmail: newEmial,
-			newPassword: newPassword,
-			newPlatform: newPlatform
-		}
-	}
-
-	sendTOSerwer = (url = '', data = {}) => {
-		let response = postData(url, data);
-		this.setResponse({newAccountResponse: response});
+	sendToSerwer = (url) => {
+		let data = createObjectToNewAccount(this.state);
+		let response;
+		data ? response = postData(url, data)
+			 : response = 'Wypełnij wszystkie pola';
+		this.setstate({newAccountResponse: response});
 	}
 
     render(){
+		let { newAccountResponse } = this.state; 
+
 	    return(
 	        <Router>
 		        <Navbar />
+				{ newAccountResponse &&
+					<ResponseComponent response={newAccountResponse} />
+				}
                 <div className="container App">
 		            <Route path="/" exact>
 			            <StartOptions/>
@@ -74,7 +73,12 @@ class App extends React.Component {
                     </Route>
                     <Route path="/add-account" exact>
                         <StartOptions/>
-                        <Form/>
+                        <Form 
+							sendPost={this.sendToSerwer}
+							onChangeNewEmail={this.onChangeNewEmail}
+							onChangeNewPass={this.onChangeNewPass}
+							onChangeNewPlatform={this.onChangeNewPlatform}
+						/>
                     </Route>
 		            <Route path="/SendEmail" component={SendEmail}/>
 		            <Route path="/Form" component={Form}/>

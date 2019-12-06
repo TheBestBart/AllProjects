@@ -7,9 +7,9 @@ import { SendEmail } from './Components/SendEmail/SendEmail';
 import { Form } from './Components/AddAccount/Form';
 import { StartOptions } from './Components/LogIn/StartOptions';
 import { LogIn } from './Components/LogIn/LogIn';
-import { postData, createObjectToNewAccount } from './Functions/functions'
+import { postData } from './Functions/functions'
 import { ResponseComponent } from './Components/ResponseComponent';
-
+import { Options } from './Components/Navbar/Options'
 
 class App extends React.Component {
 	
@@ -17,10 +17,10 @@ class App extends React.Component {
 		super(props);
 
 		this.state = {
-			newEmail: 0,
-			newPassword: 0,
-			newPlatform: 0,
-			newAccountResponse: 0
+			newEmail: false,
+			newPassword: false,
+			newPlatform: false,
+			newAccountResponse: false
 		}
 
 		this.onChangeNewEmail = this.onChangeNewEmail.bind(this);
@@ -29,27 +29,41 @@ class App extends React.Component {
 	}
 
 	onChangeNewEmail = (email) => {
-		this.setState({newEmail: email});
+		this.setState({newEmail: email.target.value});
 	}
 
 	onChangeNewPass = (pass) => {
-		this.setState({newPassword: pass});
+		this.setState({newPassword: pass.target.value});
 	}
 
 	onChangeNewPlatform = (platform) => {
-		this.setState({newPlatfrom: platform});
+		this.setState({newPlatform: platform.target.value});
 	}
 
 	setResponse = (nodeResponse) => {
 		this.setState({newAccountResponse: nodeResponse});
-	} 
+	}
+
+	createObjectToNewAccount = () => {
+		let { newEmail, newPassword , newPlatform } =  this.state;
+
+		return {
+			newEmail: newEmail,
+			newPassword: newPassword,
+			newPlatform: newPlatform,
+			}
+		}
 
 	sendToSerwer = (url) => {
-		let data = createObjectToNewAccount(this.state);
+		console.log(url);
+		let data = this.createObjectToNewAccount(this.state);
 		let response;
 		data ? response = postData(url, data)
 			 : response = 'Wypełnij wszystkie pola';
-		this.setstate({newAccountResponse: response});
+		response.then((res => {
+			this.setState({newAccountResponse: res});
+		}));
+		
 	}
 
     render(){
@@ -80,7 +94,10 @@ class App extends React.Component {
 							onChangeNewPlatform={this.onChangeNewPlatform}
 						/>
                     </Route>
-		            <Route path="/SendEmail" component={SendEmail}/>
+		            <Route path="/SendEmail" component={SendEmail}>
+						<Options />
+						<SendEmail />
+					</Route>
 		            <Route path="/Form" component={Form}/>
 		        </div>
 	        </Router>

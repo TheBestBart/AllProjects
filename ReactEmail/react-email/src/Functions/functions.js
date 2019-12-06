@@ -1,5 +1,5 @@
 export const postData = async (url = '', data = {}) =>  {
-
+    let zmienna;
     const response = await fetch(url, {
       method: 'POST', 
       mode: 'cors', 
@@ -13,17 +13,8 @@ export const postData = async (url = '', data = {}) =>  {
       body: JSON.stringify(data),
     });
 
-    return await response.json();
+     return await response.text()
+     ;
+     
+     
   }
-
-
-  export const createObjectToNewAccount = (state) => {
-    let { newEmail, newPassword , newPlatform } =  state;
-
-    (newEmail && newPassword && newPlatform) 
-        ? {
-        newEmail: newEmail,
-        newPassword: newPassword,
-        newPlatform: newPlatform,
-        } : false
-    }

@@ -7,13 +7,13 @@ mongoose.connect('mongodb://localhost:27017/EmailCreator', { useUnifiedTopology:
         console.log("connection successful");
 });
 
-mongoose.connection.on('open', () => {
-    console.log('Connected to mongo server.');
-    mongoose.connection.db.listCollections().toArray((err: Error, names: any) => {
-        console.log(names); // [{ name: 'dbname.myCollection' }]
-        module.exports.Collection = names;
-    });
-})
+// mongoose.connection.on('open', () => {
+//     console.log('Connected to mongo server.');
+//     mongoose.connection.db.listCollections().toArray((err: Error, names: any) => {
+//         console.log(names); // [{ name: 'dbname.myCollection' }]
+//         module.exports.Collection = names;
+//     });
+// })
 
 
 let schemaAccount = new mongoose.Schema({

@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom"
 
 export class Form  extends React.Component {
 
@@ -22,22 +23,25 @@ export class Form  extends React.Component {
 
                     <div className="mt-5">
                         <label>Podaj E-mail: </label>
-                        <input onChange={() => onChangeNewEmail(e.target.value)} className="form-control" type="email" placeholder="@" style={{borderRadius: "20px", borderTop:"none"}}/>
+                        <input onChange={onChangeNewEmail} className="form-control" type="email" placeholder="@" style={{borderRadius: "20px", borderTop:"none"}}/>
                     </div>
 
                     <div className="mt-3">
                         <label>Podaj Haslo: </label>
-                        <input onChange={() => onChangeNewPass(e.target.value)} className="form-control" type="password" placeholder="#" style={{borderRadius: "20px", borderTop:"none"}}/>
+                        <input onChange={onChangeNewPass} className="form-control" type="password" placeholder="#" style={{borderRadius: "20px", borderTop:"none"}}/>
                     </div>
 
                     <div className="mt-3">
-                    <   label>Podaj Platforme: </label>
-                        <input onChange={() => onChangeNewPlatform(e.target.value)} className="form-control" type="password" placeholder="@xxxx.com" style={{borderRadius: "20px", borderTop:"none"}}/>
+                        <label>Podaj Platforme: </label>
+                        <input onChange={onChangeNewPlatform} className="form-control" type="text" placeholder="@xxxx.com" style={{borderRadius: "20px", borderTop:"none"}}/>
                     </div>
 
-                    <div className="my-5 text-center">
-                        <button onClick={sendPost} className="btn " style={{borderRadius: "20px", borderTop:"none", border:"1px solid blue", }}>Dodaj Konto</button>
-                    </div>   
+                    <Link to="/" className="my-5 text-center">
+                        <div className="my-5 text-center">
+                            <button onClick={() => sendPost("http://localhost:8000/add-email")} className="btn " style={{borderRadius: "20px", borderTop:"none", border:"1px solid blue", }}>Dodaj Konto</button>
+                        </div>
+                    </Link>
+                           
                 </div>
             </div>
    

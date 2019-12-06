@@ -25,10 +25,13 @@ app.get('/', (req,res) => {
     res.send('Hello')
 });
 
-app.get('/add-email', (req, res) =>{
-    AccountDB.addAccount({name: 'bartek',pass: '2tetBartson', email:"lebek12345.95@o2.pl"}, (err: any) => {
-        err ? console.log('bląd') : console.log('pomyslnie dodano produkt')
+app.post('/add-email', (req, res) =>{
+    let { newEmail, newPassword, newPlatform } = req.body;
+    
+    AccountDB.addAccount({pass: newPassword, email:newEmail, name: newPlatform}, (err: any) => {
+        err ? res.send('bląd') :  res.send("pomyślnie dodano konto");
     })
+    
 });
 
 app.get('/list-email', (req, res) => {

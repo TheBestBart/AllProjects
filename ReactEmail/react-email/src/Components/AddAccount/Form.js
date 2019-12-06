@@ -5,7 +5,7 @@ export class Form  extends React.Component {
   render() {
         return (
 
-            <div className="container mt-5 pt-2 rounded" style={{border: "1px solid black", minheight: "400px", width:"400px"}}>
+            <div className="container mt-2 pt-2 rounded" style={{border: "1px solid black", minheight: "400px", width:"400px"}}>
                 <header className="text-center">
                     <h1>Dodaj konto</h1>
                 </header>

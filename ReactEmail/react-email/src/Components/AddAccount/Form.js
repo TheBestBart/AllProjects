@@ -1,10 +1,14 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export class Form  extends React.Component {
 
-  render() {
-        return (
+    static propTypes = {};
 
+    render() {
+        let {} =  this.props;
+
+        return (
             <div className="container mt-2 pt-2 rounded" style={{border: "1px solid black", minheight: "400px", width:"400px"}}>
                 <header className="text-center">
                     <h1>Dodaj konto</h1>
@@ -32,8 +36,7 @@ export class Form  extends React.Component {
                 </div>
             </div>
    
-  );
-  }
-  
+        );
+    }
 }
 

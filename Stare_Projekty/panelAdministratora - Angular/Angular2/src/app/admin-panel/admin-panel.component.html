@@ -1,0 +1,108 @@
+<!-- <admin-panel-logo></admin-panel-logo> -->
+<nav-bar (option)="setOption($event)"></nav-bar>
+
+<div [ngSwitch]="option">
+
+    <content-card *ngSwitchDefault>
+
+    </content-card>
+
+    <content-card  *ngSwitchCase="'students'">
+        <students-list class="col" (selectedStudent) = "selectStudent($event)" [students] = "students" [selectedStudent] = "selectedStudent"
+        (selectedStudentMode)="setStudentMode($event)" (addedStudent) = "addStudentToFirebase($event,'Students')" (deletedStudent) = "deleteStudent($event)" ></students-list>
+    </content-card>
+
+    <div *ngSwitchCase="'sets'">
+        <div [ngSwitch]="testMode">
+                <content-card *ngSwitchCase="'edit'">
+                        <p>Wkrótce będę </p>
+                 </content-card>
+
+                 <content-card *ngSwitchCase="'add'">
+                        <p>Wkrótce będę </p>
+                 </content-card>
+
+                 <content-card *ngSwitchCase="'delete'">
+                        <p>Wkrótce będę </p>
+                 </content-card>
+
+                 <content-card *ngSwitchDefault>
+
+                        <sets-table class="col" (selectedTest) = "selectTest($event)" [tests] = "tests" [selectedTest] = "selectedTest"
+                             (selectedTestMode)="setTestMode($event)"></sets-table>
+                        <sets-detail class="col" [selectedTest] = "selectedTest" ></sets-detail>
+
+                </content-card>
+
+        </div>
+    </div>
+
+    <content-card  *ngSwitchCase="'questions'">
+        <text-questions-list class="col" (selectedQuestion) = "selectQuestion($event)" [questions] = "questions" [selectedQuestion] = "selectedQuestion"
+        (selectedQuestionMode)="setQuestionMode($event)" (addedQuestion) = "addQuestion($event)" (deletedQuestion) = "deleteQuestion($event)"></text-questions-list>
+    </content-card>
+    
+
+</div>
+
+<div class="row container-fluid">
+        <div class="col-sm-2 offset-sm-2">
+            <div class="container-fluid">
+             <img class="img-responsive rounded-circle img-fluid images-style"  [src]="imagesPaths[0]" alt="Top">
+              <p class="napis text-center text-white">Students</p>
+            </div>
+         </div>
+                     
+                     
+         <div class="col-sm-2">
+                <div class="container-fluid">
+                 <img class="img-responsive rounded-circle img-fluid images-style"  [src]="imagesPaths[3]" alt="Top">
+                  <p class="napis text-center text-white">Groups</p>
+                </div>
+         </div>
+
+         <div class="col-sm-2">
+                <div class="container-fluid">
+                 <img class="img-responsive rounded-circle img-fluid images-style"  [src]="imagesPaths[2]" alt="Top">
+                  <p class="napis text-center text-white">Questions</p>
+                </div>
+         </div>
+
+         <div class="col-sm-2">
+                <div class="container-fluid">
+                 <img class="img-responsive rounded-circle img-fluid images-style"  [src]="imagesPaths[3]" alt="Top">
+                  <p class="napis text-center text-white">Groups</p>
+                </div>
+             </div>
+</div>
+
+<br><br>
+
+
+<div class="container-fluid article-style rounded ">
+    <header class="text-center text-white"><p><b>O aplikacji</b></p></header>
+    <article class="text-center text-white container">
+    Aplikacja ma na celu pomoc profesorom, mauczycielom, osobom, które mają pod opieką daną grupe osób
+    dzięki niej, Osoba ta może z łatwością dodać osobe podopieczną, stworzyć grupę ludzi, dodać nowe pytania,
+    stworzyć ankiete oraz przypisać do niej osoby. Głównym jej zadaniem zebranie informacji za pomocą
+    stworzonej przez osobę kierującą daną grupą ankiety z wcześniej przygotowanymi pytaniami
+    <i class="fa fa-facebook text-white container-fluid"></i>
+    <i class="fa fa-linkedin text-white container-fluid"></i>
+    <i class="fa fa-git-square text-white container-fluid" ></i>
+    <i class="fa fa-stack-overflow container-fluid"></i>
+    </article>
+
+</div>
+<footer class="row container-fluid bg-light margin">
+                <div class="col-4 row container-fuild">
+                    <div class="col-3 col-md-3 socials text-center facebook">a</div>
+                    <div class="col-3 col-md-3 socials linkedIn text-center">a</div>
+                    <div class="col-3 col-md-3 socials git text-center">a</div>
+                    <div class="col-3 col-md-3 socials stack-overflow text-center">a</div>
+                </div>   
+</footer>
+
+
+
+
+

@@ -1,0 +1,10 @@
+.textAdmin{
+    font-size:30px;
+  };
+  .test-row{
+    border-bottom: 2px solid transparent;
+  };
+  .test-row:hover{
+    color:lightgreen!important;
+    border-color:lightgreen!important;
+  }

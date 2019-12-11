@@ -1,0 +1,94 @@
+{
+  "rozmiary": [
+    {
+      "key": "UNI",
+      "name": "UNI"
+    },
+    {
+      "key": "XXXS",
+      "name": "XXXS"
+    },
+    {
+      "key": "XXS",
+      "name": "XXS"
+    },
+    {
+      "key": "XS",
+      "name": "XS"
+    },
+    {
+      "key": "S",
+      "name": "S"
+    },
+    {
+      "key": "M",
+      "name": "M"
+    },
+    {
+      "key": "L",
+      "name": "L"
+    },
+    {
+      "key": "XL",
+      "name": "XL"
+    },
+    {
+      "key": "XXL",
+      "name": "XXL"
+    },
+    {
+      "key": "XXXL",
+      "name": "XXXL"
+    },
+    {
+      "key": "XXXXL",
+      "name": "XXXXL"
+    }
+  ],
+  "rozmiary_buty": [
+    {
+      "key": 39,
+      "name": "39"
+    },
+    {
+      "key": "39_1_3",
+      "name": "39 1/3"
+    },
+    {
+      "key": "39,5",
+      "name": "39,5"
+    },
+    {
+      "key": 40,
+      "name": "40"
+    },
+    {
+      "key": "40,5",
+      "name": "40,5"
+    },
+    {
+      "key": "40_2_3",
+      "name": "40 2/3"
+    },
+    {
+      "key": 41,
+      "name": "41"
+    },
+    {
+      "key": "41_1_3",
+      "name": "41 1/3"
+    },
+    {
+      "key": "41,5",
+      "name": "41,5"
+    },
+    {
+      "key": 42,
+      "name": "42"
+    },
+    {
+      "key": "42,5",
+      "name": "42,5"
+    }
+  ]
+}

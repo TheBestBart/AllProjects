@@ -8,8 +8,8 @@ import { Transporter } from './Classes/Transporter'
 let AccountDB =  require('./DataBase/AccountsCollection');
 
 
-let account =  new Account('lebekbartlomiej@gmail.com', 'Bartek1a3ctet', 'Bartek Lebek');
-let mailInformer = new MailInformer('Jakub Lebek', 'marglazowska@gmail.com', 'email which uses a classes','ja piernicze dziala');
+let account =  new Account('anyEmail', 'anyPassword', 'anyName');
+let mailInformer = new MailInformer('anyPerson', 'Person', 'email which uses a classes','');
 let transporter = new Transporter('gmail', account);
 
 app.use( cors({

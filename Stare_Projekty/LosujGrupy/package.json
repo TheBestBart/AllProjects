@@ -6,7 +6,7 @@
     "cookie-parser": "^1.4.3",
     "express": "^4.16.4",
     "express-cors": "0.0.3",
-    "express-handlebars": "^3.0.0",
+    "express-handlebars": "^5.3.1",
     "mongodb": "^3.3.0",
     "mongoose": "^5.3.13",
     "node-placeholder": "^1.0.1",
